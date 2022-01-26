@@ -1,6 +1,4 @@
-﻿
-using System;
-using PluginSet.Core;
+﻿using PluginSet.Core;
 
 namespace PluginSet.Platform
 {
