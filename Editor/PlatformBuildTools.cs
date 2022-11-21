@@ -33,11 +33,6 @@ namespace PluginSet.Platform.Editor
         [AndroidProjectModify]
         public static void AndroidProjectModify(BuildProcessorContext context, AndroidProjectManager projectManager)
         {
-            if (projectManager.LauncherGradle.TargetSdkVersion >= 30)
-            {
-                projectManager.LauncherManifest.AddUsePermission("android.permission.REQUEST_INSTALL_PACKAGES");
-            }
-            
             projectManager.LauncherManifest.AddUsePermission("android.permission.READ_EXTERNAL_STORAGE");
             projectManager.LauncherManifest.AddUsePermission("android.permission.WRITE_EXTERNAL_STORAGE");
         }
