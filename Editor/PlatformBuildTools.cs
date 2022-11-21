@@ -35,9 +35,11 @@ namespace PluginSet.Platform.Editor
         {
             if (projectManager.LauncherGradle.TargetSdkVersion >= 30)
             {
-                var node = projectManager.LauncherManifest.AddUsePermission("android.permission.QUERY_ALL_PACKAGES");
-                node.SetAttribute("ignore", AndroidConst.NS_TOOLS, "QueryAllPackagesPermission");
+                projectManager.LauncherManifest.AddUsePermission("android.permission.REQUEST_INSTALL_PACKAGES");
             }
+            
+            projectManager.LauncherManifest.AddUsePermission("android.permission.READ_EXTERNAL_STORAGE");
+            projectManager.LauncherManifest.AddUsePermission("android.permission.WRITE_EXTERNAL_STORAGE");
         }
     }
 }
