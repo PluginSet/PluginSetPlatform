@@ -9,13 +9,6 @@ namespace PluginSet.Platform.Editor
     [BuildTools]
     public static class PlatformBuildTools
     {
-        [AndroidGradleProperties(0)]
-        static Dictionary<string, string> gradleProperties => new Dictionary<string, string>()
-        {
-            {"android.useAndroidX", "true"},
-            {"android.enableJetifier", "true"},
-        };
-        
         [OnSyncEditorSetting]
         public static void OnSyncEditorSetting(BuildProcessorContext context)
         {
