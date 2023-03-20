@@ -9,7 +9,7 @@ namespace PluginSet.Platform
         
         protected override void Init(PluginSetConfig config)
         {
-            var platform = config.Get<PluginPlatformConfig>("Platform");
+            var platform = config.Get<PluginPlatformConfig>();
             InitShare(platform);
         }
     }

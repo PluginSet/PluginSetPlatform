@@ -16,10 +16,10 @@ namespace PluginSet.Platform.Editor
             context.AddLinkAssembly("PluginSet.Platform");
             
             var asset = context.BuildChannels;
-            var buildParams = asset.Get<PlatformBuildParams>("Platform");
+            var buildParams = asset.Get<PlatformBuildParams>();
 
             var pluginConfig = context.Get<PluginSetConfig>("pluginsConfig");
-            var config = pluginConfig.Get<PluginPlatformConfig>("Platform");
+            var config = pluginConfig.AddConfig<PluginPlatformConfig>("Platform");
             config.ShareSuccessBack = buildParams.ShareSuccessBack;
         }
 
