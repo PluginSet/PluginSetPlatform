@@ -1,14 +1,14 @@
 {
   "name": "com.pluginset.platform",
   "displayName": "PluginSet Platform",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "unity": "2018.4",
   "description": "Plugins for Platform native api",
   "keywords": [
     "pluginset"
   ],
   "dependencies": {
-    "com.pluginset.core": "0.0.1"
+    "com.pluginset.core": "1.0.0"
   },
   "author": {
     "name": "LyneXiao",
